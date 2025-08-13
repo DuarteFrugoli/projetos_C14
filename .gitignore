@@ -1,0 +1,19 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Arquivos Python compilados
+__pycache__/
+*.pyc
+*.pyo
+
+# Pastas de saída
+dist/
+build/
+qrcodes/
+
+# Configurações do VS Code
+.vscode/
+
+# Arquivos de log
+*.log

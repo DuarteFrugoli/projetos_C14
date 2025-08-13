@@ -1,0 +1,19 @@
+[project]
+name = "gerador_qrcodes"
+version = "0.1.0"
+description = "gera um qr code a partir de um link (URL)"
+authors = [
+    {name = "Pedro, Thiago e Fábio"}
+]
+license = {text = "none"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "qrcode (>=8.2,<9.0)",
+    "pillow (>=11.3.0,<12.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

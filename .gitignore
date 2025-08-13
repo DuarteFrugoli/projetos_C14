@@ -17,3 +17,6 @@ qrcodes/
 
 # Arquivos de log
 *.log
+
+# Arquivos de documentação
+README_LOCAL.md

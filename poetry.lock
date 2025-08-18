@@ -160,5 +160,5 @@ png = ["pypng"]
 
 [metadata]
 lock-version = "2.1"
-python-versions = "3.13.5"
-content-hash = "37fc7c4366454451fa9be2cd1b42623352df3af40a6dd992f0a1624e4596c35d"
+python-versions = ">=3.13,<4.0"
+content-hash = "cbf17949cc585835f044b94b07f97e89e991ca5cbe2b4b92f692bf36bdd89b21"

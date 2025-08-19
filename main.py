@@ -11,8 +11,11 @@ while True:
         print('Insira os dados para gerar o QR Code:')
         dados = input('Dados: ')
         nome_arquivo = input('Nome do arquivo: ')
+        #insere a cor do fundo do qr code
+        cor_qr = input('Cor do QR Code (ex: black, blue, red): ')
+        cor_fundo = input('Cor de fundo (ex: white, yellow): ')
         try:
-            gerar_qrcode(dados, nome_arquivo)
+            gerar_qrcode(dados, nome_arquivo, cor_qr, cor_fundo)
             print(f'QR Code gerado com sucesso: {nome_arquivo}.png')
         except Exception as e:
             print(f'Erro ao gerar QR Code: {e}')

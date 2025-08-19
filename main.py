@@ -1,11 +1,27 @@
 from gerador_qrcodes.gerador_qrcode import gerar_qrcode
 
-print('Insira os dados para gerar o QR Code:')
-dados = input('Dados: ')
-nome_arquivo = input('Nome do arquivo: ')
+while True:
+    print('Menu:')
+    print('1 - Gerar QR Code')
+    print('0 - Encerrar')
 
-#insere a cor do fundo do qr code
-cor_qr = input('Cor do QR Code (ex: black, blue, red): ')
-cor_fundo = input('Cor de fundo (ex: white, yellow): ')
+    opcao = input('Escolha uma opção: ')
 
-gerar_qrcode(dados, nome_arquivo, cor_qr, cor_fundo)
+    if opcao == '1':
+        print('Insira os dados para gerar o QR Code:')
+        dados = input('Dados: ')
+        nome_arquivo = input('Nome do arquivo: ')
+        #insere a cor do fundo do qr code
+        cor_qr = input('Cor do QR Code (ex: black, blue, red): ')
+        cor_fundo = input('Cor de fundo (ex: white, yellow): ')
+        try:
+            gerar_qrcode(dados, nome_arquivo, cor_qr, cor_fundo)
+            print(f'QR Code gerado com sucesso: {nome_arquivo}.png')
+        except Exception as e:
+            print(f'Erro ao gerar QR Code: {e}')
+        break
+    elif opcao == '0':
+        print('Programa encerrado pelo usuário.')
+        break
+    else:
+        print('Opção inválida. Tente novamente.\n')

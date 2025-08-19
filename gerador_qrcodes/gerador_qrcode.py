@@ -1,5 +1,6 @@
 import os
 import qrcode
+from PIL import Image, ImageDraw, ImageFont
 
 def gerar_qrcode(dados, nome_arquivo, cor_qr="black", cor_fundo="white"):
     # Cria uma instância do QRCode
@@ -27,4 +28,3 @@ def gerar_qrcode(dados, nome_arquivo, cor_qr="black", cor_fundo="white"):
     caminho_arquivo = os.path.join(pasta, nome_arquivo)
     # Salva a imagem na pasta 'qrcodes'
     img.save(caminho_arquivo)
-
